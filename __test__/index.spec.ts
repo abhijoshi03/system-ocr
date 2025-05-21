@@ -1,8 +1,12 @@
+import { fileURLToPath } from 'node:url'
+import { join } from 'node:path'
+
 import test from 'ava'
 
-import { plus100 } from '../index.js'
+import { OcrAccuracy, recognize } from '../index.js'
 
-test('sync function from native code', (t) => {
-  const fixture = 42
-  t.is(plus100(fixture), fixture + 100)
+const __dirname = join(fileURLToPath(import.meta.url), '..')
+
+test('recognize text from image', async (t) => {
+  t.is((await recognize(join(__dirname, 'sample.png'), OcrAccuracy.Accurate)).text, 'Sample Text')
 })
